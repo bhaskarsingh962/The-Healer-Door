@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Loader from "./components/Loader";
 import ScrollProgress from "./components/ScrollProgress";

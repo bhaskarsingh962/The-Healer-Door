@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { classes } from "../data/classes";
 import { getWhatsAppUrl } from "../utils/whatsapp";
 import SectionHeading from "../components/SectionHeading";
-import ImageReveal from "../components/ImageReveal";
 
 export default function Classes() {
   return (
