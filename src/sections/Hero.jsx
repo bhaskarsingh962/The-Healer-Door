@@ -75,14 +75,9 @@ export default function Hero() {
 
       <div className="container-wide relative z-10 flex min-h-[100svh] items-end pb-16 pt-36 sm:pb-20 lg:pb-24">
         <motion.div style={{ opacity }} className="max-w-5xl">
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.05, duration: 0.6 }}
-            className="eyebrow mb-7 text-sand"
-          >
+          <p className="eyebrow mb-7 text-sand">
             The Healer Door · Yoga + Mat Pilates
-          </motion.p>
+          </p>
 
           <div className="overflow-hidden">
             <motion.h1

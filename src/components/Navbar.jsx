@@ -19,9 +19,9 @@ export default function Navbar() {
   const close = () => setOpen(false);
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled ? "bg-cream/90 py-3 shadow-sm backdrop-blur-md" : "bg-transparent py-5"}`}>
+    <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled ? "bg-white py-3 shadow-sm backdrop-blur-md" : "bg-transparent py-5"}`}>
       <div className="container-wide flex items-center justify-between">
-        <a href="#home" onClick={close} className={`display text-2xl font-semibold tracking-tight ${scrolled ? "text-deep" : "text-white"}`}>
+        <a href="#home" onClick={close} style={{ color: scrolled ? "#27382e" : "#fff" }} className={`display text-2xl font-semibold tracking-tight ${scrolled ? "" : "drop-shadow-[0_1px_8px_rgba(0,0,0,0.55)]"}`}>
           The Healer <span className="italic">Door</span>
         </a>
 
@@ -30,7 +30,8 @@ export default function Navbar() {
             <a
               key={item.href}
               href={item.href}
-              className={`focus-ring text-[10px] font-bold uppercase tracking-[0.12em] transition-colors ${scrolled ? "text-ink/70 hover:text-deep" : "text-white/80 hover:text-white"}`}
+              style={{ color: scrolled ? "#27382e" : "#fff" }}
+              className={`focus-ring text-[10px] font-bold uppercase tracking-[0.12em] ${scrolled ? "" : "drop-shadow-[0_1px_6px_rgba(0,0,0,0.55)]"}`}
             >
               {item.label}
             </a>
@@ -43,7 +44,8 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className={`focus-ring flex h-10 w-10 items-center justify-center lg:hidden ${scrolled ? "text-deep" : "text-white"}`}
+          style={{ color: scrolled ? "#27382e" : "#fff" }}
+          className={`focus-ring flex h-10 w-10 items-center justify-center lg:hidden ${scrolled ? "" : "drop-shadow-[0_1px_8px_rgba(0,0,0,0.55)]"}`}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
         >
